@@ -1,0 +1,176 @@
+# ---- Python standard ignores ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.conda/
+conda_env/
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+.dmypy/
+.pytype/
+.pyright/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+.jupyter/
+
+# Logs
+logs/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editors/IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# PyCharm JetBrains-specific
+# (additional PyCharm files that sometimes appear)
+*.iml
+out/
+
+# ---- Environment & Secrets ----
+# Dotenv files
+.env
+.env.*
+# Local overrides
+*.local
+*.secret
+# Keys and tokens (general patterns)
+*.key
+*.pem
+*.crt
+# Project-specific secret stash
+GenAI/stash/
+
+# ---- Data / Models / Experiments (ML/DL/GenAI) ----
+# Common data directories
+data/
+datasets/
+raw_data/
+processed_data/
+inputs/
+outputs/
+results/
+artifacts/
+
+# Models & checkpoints
+models/
+checkpoints/
+ckpts/
+weights/
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.tflite
+*.pb
+
+# Experiment trackers & logs
+runs/
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+
+# Caches from ML frameworks
+huggingface/
+.huggingface/
+transformers_cache/
+.hf_cache/
+.hf/
+
+# LLM/vector DB artifacts
+chroma/
+chroma_db/
+faiss_index*/
+vector_store*/
+index*/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+~$*
+
+# ---- Packaging/lock/caches ----
+pip-wheel-metadata/
+.pip_cache/
+.pdm.toml
+.pdm-python
+.venv.bak/
+
+# Poetry / PDM / other tools
+.poetry/
+.pdm-build/
+
+# C extensions
+*.so
+
+# Sphinx/Docs
+docs/_build/
+site/
+
+# Images/plots generated during experiments
+figures/
+plots/
+
+# Byte-compiled notebooks and exports
+*.nbconvert.ipynb
+
+# Local settings for lint/format
+.pylintrc.local
+.flake8.local
+.black.local
+.isort.local
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Backup files created by editors
+*~
+# End of .gitignore
