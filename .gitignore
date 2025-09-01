@@ -72,7 +72,7 @@ out/
 
 # ---- Environment & Secrets ----
 # Dotenv files
-.env
+GenAI/.env
 .env.*
 # Local overrides
 *.local
