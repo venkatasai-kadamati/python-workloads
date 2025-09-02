@@ -5,4 +5,5 @@ description = "Add your description here"
 requires-python = ">=3.13"
 dependencies = [
     "langchain-mistralai==0.2.11",
+    "streamlit>=1.49.1",
 ]

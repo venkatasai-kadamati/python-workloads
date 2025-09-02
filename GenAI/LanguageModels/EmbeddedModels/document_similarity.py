@@ -3,6 +3,9 @@ from dotenv import load_dotenv
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
+# this is a minified implementation with no vector stores used. RAG is a level up from this
+# is just to demonstrate how to get document similarity using embeddings
+
 load_dotenv()
 
 embedding = MistralAIEmbeddings(model="mistral-embed")
@@ -17,7 +20,7 @@ documents = [
 
 query = 'tell me about bumrah'
 
-# the idea here is to generate the embedding (vectors) for both documents and the user query
+# the idea here is to generate the embedding (vectors) for both documents, and the user query
 # assumes document vectors as black lines and user query as red line
 query_embedding = embedding.embed_query(query)
 document_embeddings = embedding.embed_documents(documents)
