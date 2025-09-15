@@ -15,7 +15,7 @@ default_args = {
 }
 
 dag = DAG(
-    'hello_dag',
+    'basic_day_linear',
     description='dag to print through both bash and python operator',
     default_args=default_args,
     start_date=datetime(2025, 9, 10),
