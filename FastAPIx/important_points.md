@@ -4,4 +4,14 @@
 uv pip install fastapi uvicorn --link-mode copy
 ```
 
-2.
+2.Understand the below block clearly
+
+```python
+# Dependency for FastAPI routes
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+```
