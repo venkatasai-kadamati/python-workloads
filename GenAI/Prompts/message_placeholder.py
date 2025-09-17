@@ -7,7 +7,7 @@ with open("chat_history.txt") as f:
 
 print(chat_history)
 
-# step2: chat template
+# step2: chat Template
 chat_template = ChatPromptTemplate(
     [
         ("system", "You are a helpful customer support agent"),

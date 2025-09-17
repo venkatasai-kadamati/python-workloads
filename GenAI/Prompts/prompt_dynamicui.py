@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import load_prompt
 from langchain_mistralai import ChatMistralAI
 
-# streamlit app to test dynamic prompting with a prompt template
+# streamlit app to test dynamic prompting with a prompt Template
 # using PromptTemplate method
 load_dotenv()
 
@@ -34,7 +34,7 @@ length_input = st.selectbox(
     ],
 )
 
-template = load_prompt("template.json")
+template = load_prompt("Template.json")
 prompt = template.invoke(
     {
         "paper_input": paper_input,
